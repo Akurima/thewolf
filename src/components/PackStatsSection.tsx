@@ -52,9 +52,9 @@ const AnimatedCounter = ({ icon: Icon, value, suffix, label }: StatProps) => {
 };
 
 const stats: StatProps[] = [
-  { icon: Users, value: 500, suffix: "+", label: "Miembros activos" },
-  { icon: Flame, value: 15000, suffix: "+", label: "Horas entrenadas al mes" },
-  { icon: Trophy, value: 8, suffix: "", label: "Años formando lobos" },
+  { icon: Users, value: 200, suffix: "+", label: "Miembros activos" },
+  { icon: Flame, value: 4800, suffix: "+", label: "Horas entrenadas al mes" },
+  { icon: Trophy, value: 2, suffix: "", label: "Años formando lobos" },
   { icon: Zap, value: 4, suffix: "", label: "Disciplinas de combate" },
 ];
 
