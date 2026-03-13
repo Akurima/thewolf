@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 225 24% 75%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 225 24% 75%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 225 24% 75%;
+
+    --primary: 16 78% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 225 24% 75%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 225 24% 60%;
+
+    --accent: 16 78% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 16 78% 51%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 225 24% 75%;
+    --sidebar-primary: 16 78% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 225 24% 75%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 16 78% 51%;
+
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --gradient-wolf: linear-gradient(135deg, hsl(16, 78%, 51%), hsl(16, 90%, 40%));
+    --shadow-wolf: 0 0 40px hsl(16 78% 51% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-gradient-wolf {
+    background: var(--gradient-wolf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-wolf {
+    box-shadow: var(--shadow-wolf);
+  }
+}
